@@ -4,101 +4,66 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="src/style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <title>Clima App</title>
   </head>
   <body>
-    <div class=" weather-app">
-    <header>
-      <form class="search-form" id="search-form">
-        <input type="search" placeholder="Enter a city...." required class="search-form-input" id="search-form-input"/>
-        <input type="submit" value="Search" class=" search-form-button" />
-      </form>
-      
-        
-    </header>
-    <main>
-      <div class="weather-app-data">
-      <div>
-        <h1 class="weather-app-city" id="city"></h1>
-        <p class="weather-app-details">
-          <span id="time"></span>, <span id="description"></span> 
-          <br />
-          Humidity: <strong id= "humidity"></strong>, Wind: <strong id="wind-speed"></strong> 
-        </p>
-      </div>
-      <div class=" weather-app-temperature-container">
-        <div id="icon">
-       </div>
-        <div class=" weather-app-temperature" id="temperature"></div>
-        <div class= "weather-app-unit">°C</div>
-      </div>
-    </div>
-      <div class="weather-forecast"> 
-        <div class=" weather-forecast-day"> 
-        <div class=" weather-forecast-date">Tue</div>
-        <div class=" weather-forecast-icon">🌤️</div>
-        <div class=" weather-forecast-temperatures">
-          <div class="weather-forecast-temperature"> <strong>16º</strong> </div>
-          <div class="weather-forecast-temperature">9º</div>
+    <div class="weather-app">
+      <header>
+        <form class="search-form" id="search-form">
+          <input
+            type="search"
+            placeholder="Enter a city...."
+            required
+            class="search-form-input"
+            id="search-form-input"
+          />
+          <input type="submit" value="Search" class="search-form-button" />
+        </form>
+      </header>
+      <main>
+        <div class="weather-app-data">
+          <div>
+            <h1 class="weather-app-city" id="city"></h1>
+            <p class="weather-app-details">
+              <span id="time"></span>, <span id="description"></span>
+              <br />
+              Humidity: <strong id="humidity"></strong>, Wind:
+              <strong id="wind-speed"></strong>
+            </p>
+          </div>
+          <div class="weather-app-temperature-container">
+            <div id="icon"></div>
+            <div class="weather-app-temperature" id="temperature"></div>
+            <div class="weather-app-unit">°C</div>
           </div>
         </div>
-      <div class=" weather-forecast-day"> 
-        <div class=" weather-forecast-date">Wed</div>
-        <div class=" weather-forecast-icon">🌤️</div>
-        <div class=" weather-forecast-temperatures">
-          <div class="weather-forecast-temperature"> <strong>16º</strong> </div>
-          <div class="weather-forecast-temperature">9º</div>
-       </div>
-      </div>
-        <div class=" weather-forecast-day"> 
-        <div class=" weather-forecast-date">Thu</div>
-        <div class=" weather-forecast-icon">🌤️</div>
-        <div class=" weather-forecast-temperatures">
-          <div class="weather-forecast-temperature"> <strong>16º</strong> </div>
-          <div class="weather-forecast-temperature">9º</div>
-         </div>
-        </div>
-        <div class=" weather-forecast-day"> 
-        <div class=" weather-forecast-date">Fri</div>
-        <div class=" weather-forecast-icon">🌤️</div>
-        <div class=" weather-forecast-temperatures">
-          <div class="weather-forecast-temperature"> <strong>16º</strong> </div>
-          <div class="weather-forecast-temperature">9º</div>
-         </div>
-        </div>
-        <div class=" weather-forecast-day"> 
-        <div class=" weather-forecast-date">Sat</div>
-        <div class=" weather-forecast-icon">🌤️</div>
-        <div class=" weather-forecast-temperatures">
-          <div class="weather-forecast-temperature"> <strong>16º</strong> </div>
-          <div class="weather-forecast-temperature">9º</div>
-          
-        </div>
-      </div>
-      <div class="weather-forecast" id="forecast"></div>
-      </main> 
+        <div class="weather-forecast" id="forecast"></div>
+      </main>
 
-    <footer>
-      <p>
-        This Project was Coded by
-        <a href="https://github.com/Loreta27" target="_blank"
-          >Kreislyn Silveira</a
-        >
-        is
-        <a href="https://github.com/Loreta27/Clima" target="_blank"
-          >open-sourced on GitHub</a
-        >
-        and
-        <a href="https://clima-app-project.netlify.app/" target="_blank"
-          >hosted on Netlify</a
-        >
-      </p>
-    </footer>
+      <footer>
+        <p>
+          This Project was Coded by
+          <a href="https://github.com/Loreta27" target="_blank"
+            >Kreislyn Silveira</a
+          >
+          is
+          <a href="https://github.com/Loreta27/Clima" target="_blank"
+            >open-sourced on GitHub</a
+          >
+          and
+          <a href="https://clima-app-project.netlify.app/" target="_blank"
+            >hosted on Netlify</a
+          >
+        </p>
+      </footer>
     </div>
-     <script src="src/index.js"></script>
+    <script src="src/index.js"></script>
   </body>
 </html>
